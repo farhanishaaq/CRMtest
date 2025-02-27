@@ -32,7 +32,8 @@
                     <li class="nav-item"> <a class="nav-link" href="{{route('admin.companies.create')}}">Create</a></li>
                       </ul>
             </div>
-        </li><li class="nav-item">
+        </li>
+        <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-title">Employees</span>
                 <i class="menu-arrow"></i>
@@ -43,6 +44,19 @@
                     <li class="nav-item"> <a class="nav-link" href="{{route('admin.employees.index')}}">Index</a></li>
                     <li class="nav-item"> <a class="nav-link" href="{{route('admin.employees.create')}}">Create</a></li>
                       </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Posts</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-office-building menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{{route('admin.posts.index')}}">Index</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{route('admin.posts.create')}}">Create</a></li>
+                </ul>
             </div>
         </li>
 

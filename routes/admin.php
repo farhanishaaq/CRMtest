@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\CompaniesController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\EmployeesController;
+use App\Http\Controllers\Admin\PostController;
 
 
 
@@ -22,5 +23,5 @@ Route::group(['middleware' => ['auth:admin', 'checkAdmin']], function () {
     Route::resource('employees', EmployeesController::class);
     Route::get('employees/info/{id}', [EmployeesController::class,'detail']);
     Route::get('autocompleteCompany', [EmployeesController::class,'autocompleteCompany'])->name('autocompleteCompany');
-
+    Route::resource('posts', PostController::class);
 });

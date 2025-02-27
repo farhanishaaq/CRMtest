@@ -7,7 +7,7 @@ use App\Http\Requests\Admin\CompanyRequest;
 use App\Models\Company;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Storage;
 
 class CompaniesController extends Controller

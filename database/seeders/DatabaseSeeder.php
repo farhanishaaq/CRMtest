@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Admin;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -24,6 +25,20 @@ class DatabaseSeeder extends Seeder
             'name'=>'Farhan Ishaq',
             'email'=>'admin@admin.com',
             'password'=>bcrypt('password')
+        ]);
+        Category::create([
+            'title'=>'Image',
+            'slug'=>'image_post',
+            'description'=>'it is post of image',
+        ]); Category::create([
+            'title'=>'Video',
+            'slug'=>'video_post',
+            'description'=>'it is post of video',
+        ]);
+        Category::create([
+            'title'=>'Article',
+            'slug'=>'article_post',
+            'description'=>'it is post of article',
         ]);
     }
 }
